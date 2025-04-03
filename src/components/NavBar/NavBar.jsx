@@ -5,7 +5,7 @@ export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="flex justify-center mt-2">
+    <div className="flex justify-center pt-2">
       <div className="max-w-[1080px] w-full px-3 relative z-50">
         <nav className="flex justify-between items-center max-h-[64px] py-3 bg-transparent">
           <img src={logo} alt="PUPPET PAY" className="h-10 w-auto" />

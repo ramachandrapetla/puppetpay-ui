@@ -4,4 +4,6 @@
   --color-primary: #ff6b3d;
   --color-secondary: #246ddd;
   --font-body: Inter, sans-serif;
+  --breakpoint-desktop: 1080px;
+  --breakpoint-small: 400px;
 }

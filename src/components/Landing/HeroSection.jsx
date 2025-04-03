@@ -6,13 +6,15 @@ import { HERO } from '../../constants/AppConstants'
 const HeroSection = () => {
   return (
     <Section>
-      <div className="flex flex-row items-center justify-between">
-        <div className="max-w-xl">
-          <h1 className="text-8xl md:text-8xl font-bold mb-4 select-none">
+      <div className="flex flex-col desktop:flex-row items-center justify-center">
+        <div className="flex flex-col items-center desktop:items-start  max-w-xl">
+          <h1 className="text-center desktop:text-left text-5xl small:text-6xl desktop:text-7xl font-bold mb-4 select-none">
             {HERO.TITLE}
           </h1>
-          <p className="text-gray-600 my-10">{HERO.DESC}</p>
-          <div className="flex max-w-md">
+          <p className="text-center desktop:text-left text-gray-600 my-10">
+            {HERO.DESC}
+          </p>
+          <div className="flex w-full max-w-[525px]">
             <input
               type="email"
               placeholder="Email address"
@@ -23,7 +25,7 @@ const HeroSection = () => {
             </button>
           </div>
         </div>
-        <div className="w-[400px]">
+        <div className="hidden desktop:block ml-10 w-[400px]">
           <img
             src={heroImage}
             alt="PuppetPay UI Preview"

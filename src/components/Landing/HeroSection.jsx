@@ -8,6 +8,7 @@ const HeroSection = () => {
     <Section>
       <div className="flex flex-col desktop:flex-row items-center justify-center">
         <div className="flex flex-col items-center desktop:items-start  max-w-xl">
+          <p className="mb-4 font-bold text-primary">Introducing PuppetPay</p>
           <h1 className="text-center desktop:text-left text-5xl small:text-6xl desktop:text-7xl font-bold mb-4 select-none">
             {HERO.TITLE}
           </h1>
@@ -18,7 +19,7 @@ const HeroSection = () => {
             <input
               type="email"
               placeholder="Email address"
-              className="px-4 py-3 w-full border border-gray-300 rounded-l-md focus:outline-none"
+              className="px-4 py-3 w-full border border-gray-300 bg-white rounded-l-md focus:outline-none"
             />
             <button className="bg-primary hover:bg-primary-600 text-white font-semibold px-6 py-3 rounded-r-md text-nowrap cursor-pointer">
               Get&nbsp;Started

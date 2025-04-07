@@ -1,3 +1,7 @@
+:root {
+  --section-padding: 100px 0 128px;
+}
+
 body {
   font-family: 'Inter', sans-serif;
 }
@@ -17,5 +21,17 @@ body {
 }
 
 .section_layout {
-  padding: 100px 0 128px;
+  padding: var(--section-padding);
+}
+
+.section_padding_bottom {
+  --section-padding: 0 0 128px;
+}
+
+.section_padding_top {
+  --section-padding: 100px 0 0;
+}
+
+.no_section_padding {
+  --section-padding: 0;
 }

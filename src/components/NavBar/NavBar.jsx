@@ -17,7 +17,7 @@ export const NavBar = () => {
             <a href="#" className="text-gray-700 hover:text-black">
               Pricing
             </a>
-            <button className="px-4 py-2 bg-blue-600 text-white rounded">
+            <button className="px-4 py-2 bg-primary text-white rounded">
               Sign In
             </button>
           </div>
@@ -61,7 +61,7 @@ export const NavBar = () => {
             <a href="#" className="block text-gray-700">
               Pricing
             </a>
-            <button className="w-full text-left px-4 py-2 bg-blue-600 text-white rounded">
+            <button className="w-full text-left px-4 py-2 bg-primary text-white rounded">
               Sign In
             </button>
           </div>

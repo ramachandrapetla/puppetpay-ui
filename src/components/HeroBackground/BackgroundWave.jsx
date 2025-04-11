@@ -1,4 +1,3 @@
-import './BackgroundWave.css'
 export const BackgroundWave = () => {
   return (
     <>

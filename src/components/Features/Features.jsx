@@ -5,29 +5,33 @@ import {
   faLock,
 } from '@fortawesome/free-solid-svg-icons'
 import { Section } from '../../layouts/Section'
+import './Features.css'
 
 const features = [
   {
     title: 'Fast Integration',
     description: 'Get started in minutes with our simple API and SDKs.',
     icon: faBoltLightning,
+    class: 'card-integration',
   },
   {
     title: 'Real-time Insights',
     description: 'Track your revenue, payments, and customers in real time.',
     icon: faChartSimple,
+    class: 'card-insights',
   },
   {
     title: 'Secure Payments',
     description:
       'PCI-DSS compliant and 2FA ready, keeping you and your users safe.',
     icon: faLock,
+    class: 'card-secure',
   },
 ]
 
 export const Features = () => {
   return (
-    <Section className="">
+    <Section className="features_section">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
           Built for speed, <br className="hidden md:block" />
@@ -43,9 +47,9 @@ export const Features = () => {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition"
+              className={`bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition glow-card ${feature.class}`}
             >
-              <div className="text-3xl mb-4">
+              <div className="text-3xl mb-4 card-icon">
                 <FontAwesomeIcon icon={feature.icon} />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-gray-900">

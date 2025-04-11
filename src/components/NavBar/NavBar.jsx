@@ -8,7 +8,7 @@ export const NavBar = () => {
     <div className="flex justify-center pt-2">
       <div className="max-w-[1080px] w-full px-3 relative z-50">
         <nav className="flex justify-between items-center max-h-[64px] py-3 bg-transparent">
-          <img src={logo} alt="PUPPET PAY" className="h-10 w-auto" />
+          <img src={logo} alt="PUPPET PAY" className="h-6 w-auto" />
           {/* Desktop Menu */}
           <div className="hidden desktop:flex space-x-6 items-center">
             <a href="#" className="text-gray-700 hover:text-black">

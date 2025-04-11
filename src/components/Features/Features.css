@@ -1,0 +1,52 @@
+.glow-card {
+  background: white;
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card-icon {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 15px;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.glow-card:hover {
+  transform: translateY(-5px);
+}
+
+.glow-card .card-icon {
+  color: black;
+}
+
+.card-integration:hover .card-icon {
+  /* filter: drop-shadow(0 0 5px #fcc01e) drop-shadow(0 0 10px #fcc01e); */
+  color: #fcc01e;
+}
+
+.card-integration:hover {
+  box-shadow: 0 0 20px #fcc01e, 0 0 40px #fcc01e;
+}
+
+.card-insights:hover .card-icon {
+  /* filter: drop-shadow(0 0 5px #00b8f4) drop-shadow(0 0 10px #00b8f4); */
+  color: #00b8f4;
+}
+
+.card-insights:hover {
+  box-shadow: 0 0 20px #00b8f4, 0 0 40px #00b8f4;
+}
+
+.card-secure:hover .card-icon {
+  /* filter: drop-shadow(0 0 5px #fcc01e) drop-shadow(0 0 10px #fcc01e); */
+  color: #28c76f;
+}
+
+.card-secure:hover {
+  box-shadow: 0 0 20px #28c76f, 0 0 40px #28c76f;
+}

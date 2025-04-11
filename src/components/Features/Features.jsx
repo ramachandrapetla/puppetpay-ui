@@ -45,10 +45,7 @@ export const Features = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
           {features.map((feature) => (
-            <div
-              key={feature.title}
-              className={`bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition glow-card ${feature.class}`}
-            >
+            <div key={feature.title} className={`glow-card ${feature.class}`}>
               <div className="text-3xl mb-4 card-icon">
                 <FontAwesomeIcon icon={feature.icon} />
               </div>
